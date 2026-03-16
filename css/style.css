@@ -4,24 +4,22 @@
 
 body {
 	font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;/* どのデバイスでも見れるようにするために書体の設定 */
-    line-height: 1.8;/* 行間設定 */
-    /* background-color: black; */
+    line-height: 1.8;
     margin: 0; 
 }
 
 .wrap{
-  background-image: url(../image/back_image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background-image: url(../image/back_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-ul{list-style-type: none;/* 中点（・）を削除する */
+ul{list-style-type: none;
     padding: 0;
 }
 
-a{text-decoration: none;}/* リンク時の下線を削除する */
-
+a{text-decoration: none;}
 img{vertical-align: bottom;}
 
 html{scroll-behavior: smooth;}
@@ -45,7 +43,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-  
+
 .menu {
     list-style: none;
     position: absolute;
@@ -60,14 +58,12 @@ header{
     transform: scale(1, 0);
     transform-origin: top;
 }
-  
 
 .menu-btn:checked ~ .menu {
     transform: scale(1, 1);
     transform-origin: top;
     transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
-  
 
 .menu a {
     text-decoration: none;
@@ -80,7 +76,7 @@ header{
     opacity: 0;
     transition: 0.5s;
 }
-  
+
 .menu li {
     border-top: 1px solid rgb(0, 0, 0);
     padding: 15px 0;
@@ -88,17 +84,17 @@ header{
     opacity: 0;
     transition: 0.5s;
 }
-  
+
 .menu-btn:checked ~ .menu a,
 .menu-btn:checked ~ .menu li {
     opacity: 1;
     transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
 }
-  
+
 .menu-btn {
     display: none;
 }
-  
+
 .menu-icon {
     display: inline-block;
     position: relative;
@@ -107,7 +103,7 @@ header{
     -webkit-tap-highlight-color: rgb(0, 0, 0);
     background-color: rgba(55, 55, 55, 0.98);
 }
-  
+
 .navicon {
     background: #ddd;
     display: block;
@@ -116,7 +112,7 @@ header{
     position: relative;
     transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
-  
+
 .navicon:before,
 .navicon:after {
     content: "";
@@ -127,30 +123,30 @@ header{
     background: #ddd;
     transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
-  
+
 .navicon:before {
     top: 9px;
 }
-  
+
 .navicon:after {
     bottom: 9px;
 }
-  
+
 .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
 }
-  
+
 .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
 }
-  
+
 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
     top: 0;
 }
 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     bottom: 0;
 }
-  
+
 .menu-btn:checked ~ .menu-icon .navicon {
     background: rgba(0, 0, 0, 0);
     transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
